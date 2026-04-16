@@ -121,6 +121,7 @@ h1, h2, h3, h4 {
     object-fit: contain;
     transform: scale(1.7); /* Incrementa el tamaño visual un 70% sin deformar el navbar */
     transform-origin: left center;
+    mix-blend-mode: multiply; /* Oculta fondos falsos tipo tablero de ajedrez en la firma */
 }
 
 .logo-link {
@@ -429,6 +430,11 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 768px) {
+    .logo {
+        height: 65px;
+        transform: scale(1.1); /* Tamaño mucho más pequeño para móviles */
+    }
+
     .hero-title {
         font-size: 2.5rem;
     }
