@@ -222,10 +222,12 @@ h1, h2, h3, h4 {
 
 .hero-photo {
     width: 100%;
-    max-width: 650px; /* Evita que crezca sin control en pantallas grandes */
-    max-height: 75vh;
-    object-fit: contain; /* Asegura que la foto completa sea visible */
-    mix-blend-mode: multiply; /* Ayuda a mezclar fondos blancos */
+    max-width: 420px; /* Hacemos el contenedor más estrecho como un retrato */
+    height: 550px; /* Altura fija para obligar al navegador a recortar la foto */
+    object-fit: cover; /* Corta la imagen para llenar la caja */
+    object-position: center 10%; /* Enfoca exactamente en tu rostro y hombros, eliminando el resto del cuerpo */
+    border-radius: 300px 300px 0 0; /* ¡Le damos la forma de Arco en la parte superior! */
+    mix-blend-mode: multiply;
 }
 
 .fade-to-white {
